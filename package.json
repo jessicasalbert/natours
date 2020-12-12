@@ -1,0 +1,22 @@
+{
+  "name": "css-course",
+  "version": "1.0.0",
+  "description": "This repo contains starter files and the finished project files for all the projects contained in the course.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass -w sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessicasalbert/advanced-css-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessicasalbert/advanced-css-course/issues"
+  },
+  "homepage": "https://github.com/jessicasalbert/advanced-css-course#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
