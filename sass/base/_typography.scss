@@ -40,4 +40,11 @@ body {
     display: inline-block;
     -webkit-background-clip: text;
     color: transparent;
+    transition: all .2s;
+    letter-spacing: .2rem;
+
+    &:hover {
+        transform: skewY(5deg) skewX(10deg) scale(1.1);
+        text-shadow: 0.5rem 1rem 2rem rgba($color-black, .2);
+    }
 }
