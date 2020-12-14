@@ -1,22 +1,36 @@
 .card {
     // lower perspective value = more dramatic effect
     perspective: 150rem;
+    position: relative;
+    height: 50rem;
 
     // for use in mozilla firefox
     -moz-perspective: 150rem;
 
     &__side {
-        background-color: orangered;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
         height: 50rem;
-        transition: all .8s;
+        transition: all .8s ease;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
         &--front {
-            background-color: blue;
+            background-color: $color-white;
         }
 
         &--back {
-            background-color: orangered;
-            transform: rotateY(180deg)
+
+
+            &-1 {
+                
+                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+            }
+            
+            transform: rotateY(180deg);
         }
     }
 
