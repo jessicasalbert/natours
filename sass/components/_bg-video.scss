@@ -3,5 +3,17 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%
+    width: 100%;
+    z-index: -1;
+    opacity: .15;
+    overflow: hidden;
+
+    &__content {
+        width: 100%;
+        height: 100%;
+
+        //similar to background-fit: cover
+        //fits background to size while maintaining aspect ratio
+        object-fit: cover;
+    }
 }
