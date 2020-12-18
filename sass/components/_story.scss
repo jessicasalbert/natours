@@ -5,5 +5,29 @@
     background-color: $color-white;
     border-radius: 3px;
     padding: 6rem;
+    padding-left: 9rem;
+    font-size: $default-font-size;
 
+    &__shape {
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        
+        //allows for text to float around shape
+        //element must be floated and have defined width & height
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+
+        //clips element to circle shape
+        clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+
+        //better to use transform to move a floated element
+        //(rather than margin)
+        transform: translateX(-3rem);
+    }
+
+    &__image {
+        height: 100%;
+    }
 }
