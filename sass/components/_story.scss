@@ -7,6 +7,8 @@
     padding: 6rem;
     padding-left: 9rem;
     font-size: $default-font-size;
+    transform: skewX(-12deg);
+
 
     &__shape {
         width: 15rem;
@@ -24,10 +26,14 @@
 
         //better to use transform to move a floated element
         //(rather than margin)
-        transform: translateX(-3rem);
+        transform: translateX(-3rem) skewX(12deg);
     }
 
     &__image {
         height: 100%;
+    }
+
+    &__text {
+        transform: skewX(12deg);
     }
 }
