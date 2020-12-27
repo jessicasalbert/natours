@@ -673,9 +673,9 @@ p {
   background-color: transparent; }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
-  transform: rotate(-45deg);
+  transform: rotate(-135deg);
   top: 0; }
 
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
-  transform: rotate(45deg); }
+  transform: rotate(135deg); }
