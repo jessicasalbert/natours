@@ -30,7 +30,7 @@
         //z index only works on element with a define position
         z-index: 1000;
 
-        transition: transform .8s;
+        transition: transform .8s cubic-bezier(.86, 0, .07, 1);
     }
 
     &__nav {
@@ -42,7 +42,7 @@
         z-index: 1500;
         opacity: 0;
         width: 0;
-        transition: all .8s
+        transition: all .8s cubic-bezier(.68, -.55, .265, 1.55);
     }
 
     &__list {
