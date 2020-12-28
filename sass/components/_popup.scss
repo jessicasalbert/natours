@@ -43,5 +43,20 @@
     &__text {
         font-size: 1.4rem;
         margin-bottom: 4rem;
+
+        // Separate content into multiple columns
+        -moz-column-count: 2;
+        -moz-column-gap: 4rem;
+        -moz-column-rule: 1px solid $color-grey-light-1;
+
+        column-count: 2;
+        column-gap: 4rem;
+        column-rule: 1px solid $color-grey-light-1;
+
+        // Adds hyphen breaks to columns
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
     }
 }
