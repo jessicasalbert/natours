@@ -16,18 +16,44 @@
         visibility: visible;
     }
 
+    &__close {
+        &:link,
+        &:visited {
+            color: $color-grey-dark;
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            font-size: 3rem;
+            text-decoration: none;
+            display: inline;
+            line-height: 1;
+        }
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    &:target &__content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
     &__content {
         @include absCenter;
         background-color: $color-white;
         width: 70%;
         box-shadow: 0 s2rem 4rem rgba($color-black, .2);
         border-radius: 3px;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(.5);
 
         // Used to ensure left column (pictures) and right column have same height
         display: table;
         
         // Hides portion of image that covers rounded border-radius
         overflow: hidden;
+        transition: all .4s .2s;
     }
 
     &__left {
