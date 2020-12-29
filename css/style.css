@@ -102,6 +102,13 @@ p {
 .u-margin-top-huge {
   margin-top: 10rem; }
 
+/* 
+0 - 600px : phone
+600 - 900 px : tablet portrait
+900 - 1200 px : tablet landscape
+1200 - 1800 : desktop 
+1800+ : big desktop
+*/
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
