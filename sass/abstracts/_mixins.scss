@@ -13,6 +13,10 @@
     transform: translate(-50%, -50%)
 }
 
+@mixin font {
+    font-size: 62.5%;
+}
+
 // Media queries
 /* 
 0 - 600px : phone
@@ -23,7 +27,7 @@
 */
 
 // Use em because rems don't always work for media queries
-@mixin response($breakpoint) {
+@mixin respond($breakpoint) {
     @if $breakpoint == phone {
         @media (max-width: 37.5em) { @content };
     }
@@ -37,3 +41,4 @@
         @media (min-width: 112.5em) { @content };
     }
 }
+
